@@ -1,0 +1,9 @@
+export const SHOW_TEAM = false;
+export const SHOW_OPP = true;
+export const WON = "won";
+export const LOST = "lost";
+export const DRAWN = "drawn";
+export const POINTS = "points";
+export const NORESULT = "nr";
+export const TEAM1 = "t1";
+export const TEAM2 = "t2";
