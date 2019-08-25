@@ -1,0 +1,42 @@
+export const dlmMatches = [
+  {
+    date: "2019-06-16",
+    type: 1,
+    fin: 1,
+    t1: "IND",
+    t1NR: 0,
+    t1Ov: 40,
+    t1Ru: 301,
+    t1SupOvrR: 0,
+    t1SupOvrW: 0,
+    t1Wk: 0,
+    t2: "PAK",
+    t2NR: 0,
+    t2Ov: 40,
+    t2Ru: 212,
+    t2SupOvrR: 0,
+    t2SupOvrW: 0,
+    t2Wk: 0,
+    dlmethod: true
+  },
+  {
+    date: "2019-06-04",
+    type: 1,
+    fin: 1,
+    t1NR: 0,
+    t1: "AFG",
+    t1Ov: 39,
+    t1Ru: 153,
+    t1SupOvrR: 0,
+    t1SupOvrW: 0,
+    t1Wk: 0,
+    t2: "SL",
+    t2NR: 0,
+    t2Ov: 41,
+    t2Ru: 186,
+    t2SupOvrR: 0,
+    t2SupOvrW: 0,
+    t2Wk: 0,
+    dlmethod: true
+  }
+];

@@ -1,0 +1,42 @@
+export const adjustments = [
+  {
+    date: "2019-01-01",
+    type: 1,
+    fin: 0,
+    t1: "SA",
+    t1Ov: 0,
+    t1Ru: 0,
+    t1NR: 0,
+    t1SupOvrR: 0,
+    t1SupOvrW: 0,
+    t1Wk: 0,
+    t2: "",
+    t2Ov: 0,
+    t2Ru: 1,
+    t2NR: 0,
+    t2SupOvrR: 0,
+    t2SupOvrW: 0,
+    t2Wk: 0,
+    dlmethod: true
+  },
+  {
+    date: "2019-01-01",
+    type: 1,
+    fin: 0,
+    t1: "SL",
+    t1Ov: 0,
+    t1Ru: 0,
+    t1NR: 0,
+    t1SupOvrR: 0,
+    t1SupOvrW: 0,
+    t1Wk: 0,
+    t2: "",
+    t2Ov: 2,
+    t2Ru: -1,
+    t2NR: 0,
+    t2SupOvrR: 0,
+    t2SupOvrW: 0,
+    t2Wk: 0,
+    dlmethod: true
+  }
+];

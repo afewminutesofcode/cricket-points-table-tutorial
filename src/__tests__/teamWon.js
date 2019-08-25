@@ -9,5 +9,5 @@ it("teamWon.", () => {
       team: "ENG",
       stat: "Ru"
     })
-  ).toBe(2);
+  ).toBe(6);
 });
