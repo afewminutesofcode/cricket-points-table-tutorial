@@ -1,62 +1,9 @@
+import { nonDlmMatches } from "./nonDlmMatches";
+import { dlmMatches } from "./dlmMatches";
+import { adjustments } from "./adjustments";
+
 export const matches = [
-  {
-    date: "2019-05-30",
-    type: 1,
-    fin: 1,
-    t1: "ENG",
-    t1NR: 0,
-    t1Ov: 50,
-    t1Ru: 311,
-    t1SupOvrR: 0,
-    t1SupOvrW: 0,
-    t1Wk: 8,
-    t2: "SA",
-    t2NR: 0,
-    t2Ov: 50,
-    t2Ru: 207,
-    t2SupOvrR: 0,
-    t2SupOvrW: 0,
-    t2Wk: 10,
-    dlmethod: false
-  },
-  {
-    date: "2019-06-08",
-    type: 1,
-    fin: 1,
-    t1: "ENG",
-    t1NR: 0,
-    t1Ov: 50,
-    t1Ru: 386,
-    t1SupOvrR: 0,
-    t1SupOvrW: 0,
-    t1Wk: 6,
-    t2: "BAN",
-    t2NR: 0,
-    t2Ov: 50,
-    t2Ru: 280,
-    t2SupOvrR: 0,
-    t2SupOvrW: 0,
-    t2Wk: 10,
-    dlmethod: false
-  },
-  {
-    date: "2019-06-10",
-    type: 1,
-    fin: 1,
-    t1: "SA",
-    t1NR: 1,
-    t1Ov: 0,
-    t1Ru: 0,
-    t1SupOvrR: 0,
-    t1SupOvrW: 0,
-    t1Wk: 0,
-    t2: "WI",
-    t2NR: 1,
-    t2Ov: 0,
-    t2Ru: 0,
-    t2SupOvrR: 0,
-    t2SupOvrW: 0,
-    t2Wk: 0,
-    dlmethod: false
-  }
+  ...nonDlmMatches,
+  ...dlmMatches,
+  ...adjustments
 ];
