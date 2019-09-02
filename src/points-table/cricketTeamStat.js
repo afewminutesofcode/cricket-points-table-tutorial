@@ -16,9 +16,8 @@ export const cricketTeamStat = ({
   const statTotal = matches
     .filter(
       match =>
-        match[teamNum] === team &&
-        match["type"] === 1 &&
-        match["fin"] === 1
+        match[teamNum] === team && match["type"] === 1
+      // && match["fin"] === 1
     )
     .reduce((total, match) => {
       const value =
