@@ -8,6 +8,11 @@ import { tournamentConfig } from "./data/tournamentConfig";
 import { sortPointsTable } from "./points-table/sortPointsTable";
 
 function App() {
+  console.log(
+    matches.filter(
+      match => match.t1 === "SL" && match.t2 === "SA"
+    )
+  );
   const pointsTableData = pointsTableObj({
     teams: teamsInMatches(matches),
     matches,
@@ -19,32 +24,32 @@ function App() {
     )
   );
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Team</th>
-          <th align="right">P</th>
-          <th align="right">W</th>
-          <th align="right">L</th>
-          <th align="right">NRR</th>
-          <th align="right">Pts</th>
-        </tr>
-      </thead>
-      <tbody>
-        {sortedPointsTable.map(team => (
-          <tr key={team.team}>
-            <td component="th" scope="row">
-              {team.team}
-            </td>
-            <td align="right">{team.played}</td>
-            <td align="right">{team.won}</td>
-            <td align="right">{team.lost}</td>
-            <td align="right">{team.netrr}</td>
-            <td align="right">{team.pts}</td>
+    <div className="App">
+      <table>
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th align="right">P</th>
+            <th align="right">W</th>
+            <th align="right">L</th>
+            <th align="right">NRR</th>
+            <th align="right">Pts</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {sortedPointsTable.map(team => (
+            <tr key={team.team}>
+              <td>{team.team}</td>
+              <td align="right">{team.played}</td>
+              <td align="right">{team.won}</td>
+              <td align="right">{team.lost}</td>
+              <td align="right">{team.netrr}</td>
+              <td align="right">{team.pts}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
