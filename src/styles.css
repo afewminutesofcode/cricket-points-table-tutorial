@@ -1,4 +1,30 @@
+body {
+  margin: 0;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+  width: 320px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+tr {
+  border: 1px solid #aaa;
+}
+
+th,
+td {
+  padding: 7px 10px;
+}
+th {
+  color: #aaa;
+  font-size: 12px;
+}
+td {
+  font-size: 14px;
 }
