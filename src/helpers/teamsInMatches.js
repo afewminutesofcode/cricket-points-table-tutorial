@@ -6,4 +6,13 @@ export const teamsInMatches = matches => [
       .filter(item => item !== "")
       .sort()
   )
+  /*
+  ...new Set(
+    matches
+      .map(match => [match.t1, match.t2])
+      .flat()
+      .filter(item => item !== "")
+      .sort()
+  )
+  */
 ];

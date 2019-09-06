@@ -8,11 +8,6 @@ import { tournamentConfig } from "./data/tournamentConfig";
 import { sortPointsTable } from "./points-table/sortPointsTable";
 
 function App() {
-  console.log(
-    matches.filter(
-      match => match.t1 === "SL" && match.t2 === "SA"
-    )
-  );
   const pointsTableData = pointsTableObj({
     teams: teamsInMatches(matches),
     matches,
